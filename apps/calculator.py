@@ -23,5 +23,3 @@ class Calculator:
         elif selection == 4:
                 toplam = number1 * number2
                 print(number1, "*", number2, "=", toplam)
-finish = Calculator.question()
-print(finish)

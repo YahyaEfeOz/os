@@ -4,6 +4,3 @@ class People:
         self.surname = surname
         self.email = email
         self.num = num
-
-
-

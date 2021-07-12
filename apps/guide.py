@@ -14,6 +14,7 @@ class Guide:
         peoples = []
         with open("./data/guide.txt", "r") as file:
             peoples = file.readlines()
+            print("Kişi Başarıyla Silinmiştir")
             file.close()
 
         for people in peoples:
