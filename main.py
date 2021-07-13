@@ -72,8 +72,8 @@ while True:
 
         elif choice == 3:
             while True:
-                result = calculator.question
-                print(result)
+                result2 = calculator.question
+                print(result2)
 
                 choice3 = int(input("1-Hesap Makinesine Geri Dön \n"
                                     "2-Üst Menüye Dön \n"
