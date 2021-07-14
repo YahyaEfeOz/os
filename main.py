@@ -5,7 +5,7 @@ from apps.calculator import Calculator
 
 guide = Guide()
 rock_paper_sci = RockPaperSci()
-calculator = Calculator
+calculator = Calculator()
 
 while True:
 
@@ -42,7 +42,7 @@ while True:
                     choice3 = int(input("1-Rehbere Geri Dön \n"
                                         "2-Üst Menüye Dön \n"
                                         "3-Programı Kapat \n"
-                                        "Seçiminizi Yapınız:"))
+                                        "Seçiminizi Yapınız(1/2/3):"))
                     if choice3 == 1:
                         continue
                     elif choice3 == 2:
@@ -60,7 +60,7 @@ while True:
                 choice3 = int(input("1-Tekrar Oyna \n"
                                     "2-Üst Menüye Dön \n"
                                     "3-Programı Kapat \n"
-                                    "Seçiminizi Yapınız:"))
+                                    "Seçiminizi Yapınız(1/2/3):"))
                 if choice3 == 1:
                     continue
                 elif choice3 == 2:
@@ -72,18 +72,38 @@ while True:
 
         elif choice == 3:
             while True:
-                result2 = calculator.question
-                print(result2)
+                question = (int(input("1-4 İşlem \n"
+                                      "2-Faktoriyel \n"
+                                      "Seçiminizi Yapınız(1/2):")))
 
-                choice3 = int(input("1-Hesap Makinesine Geri Dön \n"
-                                    "2-Üst Menüye Dön \n"
-                                    "3-Programı Kapat \n"
-                                    "Seçiminizi Yapınız:"))
-                if choice3 == 1:
-                    continue
-                elif choice3 == 2:
-                    break
-                elif choice3 == 3:
-                    quit()
-                else:
-                    print("Lütfen İstenen Değerlerde Seçim Yapınız!")
+                if question == 1:
+                    calculator.main_calculator()
+
+                    choice3 = int(input("1-Hesap Makinesine Geri Dön \n"
+                                        "2-Üst Menüye Dön \n"
+                                        "3-Programı Kapat \n"
+                                        "Seçiminizi Yapınız(1/2/3):"))
+                    if choice3 == 1:
+                        continue
+                    elif choice3 == 2:
+                        break
+                    elif choice3 == 3:
+                        quit()
+                    else:
+                        print("Lütfen İstenen Değerlerde Seçim Yapınız!")
+
+                elif question == 2:
+                    calculator.factorial()
+
+                    choice3 = int(input("1-Hesap Makinesine Geri Dön \n"
+                                        "2-Üst Menüye Dön \n"
+                                        "3-Programı Kapat \n"
+                                        "Seçiminizi Yapınız(1/2/3):"))
+                    if choice3 == 1:
+                        continue
+                    elif choice3 == 2:
+                        break
+                    elif choice3 == 3:
+                        quit()
+                    else:
+                        print("Lütfen İstenen Değerlerde Seçim Yapınız!")
