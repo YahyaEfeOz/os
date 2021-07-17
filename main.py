@@ -2,17 +2,20 @@ from apps.guide import Guide
 from model.people import People
 from apps.rock_paper_sci import RockPaperSci
 from apps.calculator import Calculator
+from apps.clock import Time
 
 guide = Guide()
 rock_paper_sci = RockPaperSci()
 calculator = Calculator()
+time = Time()
 
 while True:
 
         choice = int(input("1-Rehber \n"
                            "2-Oyun(Taş Kağıt Makas) \n"
                            "3-Hesap Makinesı \n"
-                           "Seçiminizi belirtiniz(1/2/3):"))
+                           "4-Tarih Ve Saat\n"
+                           "Seçiminizi belirtiniz(1/2/3/4):"))
 
 
 
@@ -107,3 +110,17 @@ while True:
                         quit()
                     else:
                         print("Lütfen İstenen Değerlerde Seçim Yapınız!")
+        elif choice == 4:
+            time.time()
+            choice3 = int(input("1-Tarih ve Saati Tekrar Göster\n"
+                                "2-Üst Menüye Dön \n"
+                                "3-Programı Kapat \n"
+                                "Seçiminizi Yapınız(1/2/3):"))
+            if choice3 == 1:
+                continue
+            elif choice3 == 2:
+                break
+            elif choice3 == 3:
+                quit()
+            else:
+                print("Lütfen İstenen Değerlerde Seçim Yapınız!")

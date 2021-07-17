@@ -1,4 +1,3 @@
 Yahya,Oz,efe@eposta.com,3
 Neslisah,Erol,nes@hotmail.com,2
 Necati,Erol,neco@gmail.com,5
-Melike,Erol,merol@gmail.com,8
