@@ -111,16 +111,17 @@ while True:
                     else:
                         print("Lütfen İstenen Değerlerde Seçim Yapınız!")
         elif choice == 4:
-            time.time()
-            choice3 = int(input("1-Tarih ve Saati Tekrar Göster\n"
-                                "2-Üst Menüye Dön \n"
-                                "3-Programı Kapat \n"
-                                "Seçiminizi Yapınız(1/2/3):"))
-            if choice3 == 1:
-                continue
-            elif choice3 == 2:
-                break
-            elif choice3 == 3:
-                quit()
-            else:
-                print("Lütfen İstenen Değerlerde Seçim Yapınız!")
+            while True:
+                time.time()
+                choice3 = int(input("1-Tarih ve Saati Tekrar Göster\n"
+                                    "2-Üst Menüye Dön \n"
+                                    "3-Programı Kapat \n"
+                                    "Seçiminizi Yapınız(1/2/3):"))
+                if choice3 == 1:
+                    continue
+                elif choice3 == 2:
+                    break
+                elif choice3 == 3:
+                    quit()
+                else:
+                    print("Lütfen İstenen Değerlerde Seçim Yapınız!")
